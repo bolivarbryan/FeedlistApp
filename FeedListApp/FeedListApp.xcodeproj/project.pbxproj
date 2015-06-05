@@ -15,6 +15,7 @@
 		582C05FE1B20D9A8008B5333 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582C05FD1B20D9A8008B5333 /* Images.xcassets */; };
 		582C06011B20D9A8008B5333 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582C05FF1B20D9A8008B5333 /* LaunchScreen.xib */; };
 		582C060D1B20D9A9008B5333 /* FeedListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582C060C1B20D9A9008B5333 /* FeedListAppTests.m */; };
+		585ADC351B21FC5A0059AE63 /* FLAPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 585ADC341B21FC5A0059AE63 /* FLAPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		582C06061B20D9A9008B5333 /* FeedListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582C060B1B20D9A9008B5333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		582C060C1B20D9A9008B5333 /* FeedListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedListAppTests.m; sourceTree = "<group>"; };
+		585ADC331B21FC5A0059AE63 /* FLAPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAPost.h; path = Models/FLAPost.h; sourceTree = "<group>"; };
+		585ADC341B21FC5A0059AE63 /* FLAPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAPost.m; path = Models/FLAPost.m; sourceTree = "<group>"; };
 		7B480FF8B77A211112AAAB53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BB281BA0B5DD9B803DA59F9C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,7 @@
 		582C05E41B20D9A8008B5333 = {
 			isa = PBXGroup;
 			children = (
+				585ADC361B21FC610059AE63 /* Models */,
 				582C05EF1B20D9A8008B5333 /* FeedListApp */,
 				582C06091B20D9A9008B5333 /* FeedListAppTests */,
 				582C05EE1B20D9A8008B5333 /* Products */,
@@ -124,6 +128,15 @@
 				582C060B1B20D9A9008B5333 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		585ADC361B21FC610059AE63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				585ADC331B21FC5A0059AE63 /* FLAPost.h */,
+				585ADC341B21FC5A0059AE63 /* FLAPost.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		606655998864B2B82CCCE285 /* Pods */ = {
@@ -279,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				582C05F91B20D9A8008B5333 /* ViewController.m in Sources */,
+				585ADC351B21FC5A0059AE63 /* FLAPost.m in Sources */,
 				582C05F61B20D9A8008B5333 /* AppDelegate.m in Sources */,
 				582C05F31B20D9A8008B5333 /* main.m in Sources */,
 			);

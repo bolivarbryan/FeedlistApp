@@ -7,15 +7,22 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking.h>
+
 
 @interface ViewController ()
+
+
 
 @end
 
 @implementation ViewController
 
+
+#pragma functions
 - (void)viewDidLoad {
     [super viewDidLoad];
+       
     // Do any additional setup after loading the view, typically from a nib.
 }
 
