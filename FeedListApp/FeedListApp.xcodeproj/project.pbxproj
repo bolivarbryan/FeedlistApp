@@ -15,6 +15,7 @@
 		582C06011B20D9A8008B5333 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582C05FF1B20D9A8008B5333 /* LaunchScreen.xib */; };
 		582C060D1B20D9A9008B5333 /* FeedListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582C060C1B20D9A9008B5333 /* FeedListAppTests.m */; };
 		585ADC351B21FC5A0059AE63 /* FLAPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 585ADC341B21FC5A0059AE63 /* FLAPost.m */; };
+		5896DDAF1B22221F004C6C8F /* FLAPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5896DDAE1B22221F004C6C8F /* FLAPostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		582C060C1B20D9A9008B5333 /* FeedListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedListAppTests.m; sourceTree = "<group>"; };
 		585ADC331B21FC5A0059AE63 /* FLAPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAPost.h; path = Models/FLAPost.h; sourceTree = "<group>"; };
 		585ADC341B21FC5A0059AE63 /* FLAPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAPost.m; path = Models/FLAPost.m; sourceTree = "<group>"; };
+		5896DDAD1B22221F004C6C8F /* FLAPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLAPostViewController.h; path = Controllers/FLAPostViewController.h; sourceTree = "<group>"; };
+		5896DDAE1B22221F004C6C8F /* FLAPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAPostViewController.m; path = Controllers/FLAPostViewController.m; sourceTree = "<group>"; };
 		7B480FF8B77A211112AAAB53 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BB281BA0B5DD9B803DA59F9C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +71,7 @@
 		582C05E41B20D9A8008B5333 = {
 			isa = PBXGroup;
 			children = (
+				5896DDAC1B2221D6004C6C8F /* Controllers */,
 				585ADC361B21FC610059AE63 /* Models */,
 				582C05EF1B20D9A8008B5333 /* FeedListApp */,
 				582C06091B20D9A9008B5333 /* FeedListAppTests */,
@@ -132,6 +136,15 @@
 				585ADC341B21FC5A0059AE63 /* FLAPost.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		5896DDAC1B2221D6004C6C8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5896DDAD1B22221F004C6C8F /* FLAPostViewController.h */,
+				5896DDAE1B22221F004C6C8F /* FLAPostViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		606655998864B2B82CCCE285 /* Pods */ = {
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				585ADC351B21FC5A0059AE63 /* FLAPost.m in Sources */,
+				5896DDAF1B22221F004C6C8F /* FLAPostViewController.m in Sources */,
 				582C05F61B20D9A8008B5333 /* AppDelegate.m in Sources */,
 				582C05F31B20D9A8008B5333 /* main.m in Sources */,
 			);

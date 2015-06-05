@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <Mantle.h>
 
+
 @interface FLAPost : MTLModel <MTLJSONSerializing>
 
 @property (strong, nonatomic) NSString *urlImage;
