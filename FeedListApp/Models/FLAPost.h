@@ -9,13 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <Mantle.h>
 
-
 @interface FLAPost : MTLModel <MTLJSONSerializing>
 
-
-@property (strong,  nonatomic) NSString *urlImage;
-@property (copy,    nonatomic) NSString *description;
-@property (copy,    nonatomic) NSString *name;
-
+@property (strong, nonatomic) NSString *urlImage;
+@property (copy, nonatomic) NSString *description;
+@property (copy, nonatomic) NSString *name;
 
 @end

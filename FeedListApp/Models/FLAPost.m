@@ -10,8 +10,8 @@
 
 @implementation FLAPost
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
     return @{@"desciption":@"details",
              @"name":@"name",
              @"urlImage":@"image"};
