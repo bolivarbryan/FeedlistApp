@@ -12,8 +12,9 @@
 
 @interface FLAPost : MTLModel <MTLJSONSerializing>
 
-@property (strong, nonatomic) NSString *urlImage;
-@property (copy, nonatomic) NSString *description;
-@property (copy, nonatomic) NSString *name;
+
+
+@property (nonatomic) NSArray *_post;
+
 
 @end

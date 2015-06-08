@@ -8,16 +8,38 @@
 
 #import "FLAPostViewController.h"
 #import <AFNetworking.h>
-
+#import "FLAPost.h"
 @interface FLAPostViewController ()
 
 @end
 
 @implementation FLAPostViewController
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+   
+    self.url = @"http://www.kbapi.co/g/55XNXGda.json";
+    
+    AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
+    [request GET:self.url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self serializer:responseObject];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+            
+    }];
     // Do any additional setup after loading the view.
+}
+
+
+
+- (void)serializer:(NSDictionary*)data
+{
+       NSError *error;
+    FLAPost *post = [MTLJSONAdapter modelOfClass:[FLAPost class] fromJSONDictionary:data[@"data"] error:&error];
+    NSLog(@"%@",[post _post]);
+
 }
 
 - (void)didReceiveMemoryWarning {

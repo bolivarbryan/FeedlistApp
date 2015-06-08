@@ -11,4 +11,7 @@
 
 @interface FLAPostViewController : UIViewController
 
+@property (copy, nonatomic) NSString *url;
+@property (copy, nonatomic) NSDictionary *dic;
+
 @end
