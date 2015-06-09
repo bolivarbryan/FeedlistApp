@@ -10,7 +10,7 @@
 #import <AFNetworking.h>
 #import "FLAPost.h"
 #import <MagicalRecord.h>
-static NSString * const KFLAPostUrl = @"http://www.kbapi.co/g/55XNXGda.json";
+static NSString * const kFLAPostViewController = @"http://www.kbapi.co/g/55XNXGda.json";
 
 @interface FLAPostViewController ()
 
@@ -23,7 +23,7 @@ static NSString * const KFLAPostUrl = @"http://www.kbapi.co/g/55XNXGda.json";
     [super viewDidLoad];
    
     AFHTTPRequestOperationManager *request = [AFHTTPRequestOperationManager manager];
-    [request GET:KFLAPostUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [request GET:kFLAPostViewController parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self serializer:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
