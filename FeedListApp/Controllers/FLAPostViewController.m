@@ -9,6 +9,9 @@
 #import "FLAPostViewController.h"
 #import <AFNetworking.h>
 #import "FLAPost.h"
+#import <MagicalRecord.h>
+
+
 @interface FLAPostViewController ()
 
 @end
@@ -37,8 +40,18 @@
 - (void)serializer:(NSDictionary*)data
 {
        NSError *error;
-    FLAPost *post = [MTLJSONAdapter modelOfClass:[FLAPost class] fromJSONDictionary:data[@"data"] error:&error];
-    NSLog(@"%@",[post _post]);
+    
+    for (NSString *datos in data[@"data"][@"Post"]){
+    
+        NSLog(@"%@", [datos valueForKey:@"name"]);
+        FLAPost *post = [MTLJSONAdapter modelOfClass:[FLAPost class] fromJSONDictionary:datos error:&error];
+        
+        NSLog(@"%@",post);
+        
+    }
+    
+    //FLAPost *post = [MTLJSONAdapter modelOfClass:[FLAPost class] fromJSONDictionary:data[@"data"] error:&error];
+    //NSLog(@"%@",[post _post]);
 
 }
 

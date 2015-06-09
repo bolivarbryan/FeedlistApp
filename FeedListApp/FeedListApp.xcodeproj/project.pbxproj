@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		498C120741353A478648E9E3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D9F8275E5C2BD0C374F147 /* libPods.a */; };
+		5801856D1B274CCD00DF27F1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5801856B1B274CCD00DF27F1 /* Model.xcdatamodeld */; };
+		580185701B27690B00DF27F1 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5801856F1B27690B00DF27F1 /* DataBase.m */; };
 		582C05F31B20D9A8008B5333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 582C05F21B20D9A8008B5333 /* main.m */; };
 		582C05F61B20D9A8008B5333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 582C05F51B20D9A8008B5333 /* AppDelegate.m */; };
 		582C05FC1B20D9A8008B5333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582C05FA1B20D9A8008B5333 /* Main.storyboard */; };
@@ -30,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		27D9F8275E5C2BD0C374F147 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5801856C1B274CCD00DF27F1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5801856E1B27690B00DF27F1 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataBase.h; path = Models/DataBase.h; sourceTree = "<group>"; };
+		5801856F1B27690B00DF27F1 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataBase.m; path = Models/DataBase.m; sourceTree = "<group>"; };
 		582C05ED1B20D9A8008B5333 /* FeedListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582C05F11B20D9A8008B5333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		582C05F21B20D9A8008B5333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		582C05E41B20D9A8008B5333 = {
 			isa = PBXGroup;
 			children = (
+				5801856B1B274CCD00DF27F1 /* Model.xcdatamodeld */,
 				5896DDAC1B2221D6004C6C8F /* Controllers */,
 				585ADC361B21FC610059AE63 /* Models */,
 				582C05EF1B20D9A8008B5333 /* FeedListApp */,
@@ -132,6 +138,8 @@
 		585ADC361B21FC610059AE63 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5801856E1B27690B00DF27F1 /* DataBase.h */,
+				5801856F1B27690B00DF27F1 /* DataBase.m */,
 				585ADC331B21FC5A0059AE63 /* FLAPost.h */,
 				585ADC341B21FC5A0059AE63 /* FLAPost.m */,
 			);
@@ -301,6 +309,8 @@
 			files = (
 				585ADC351B21FC5A0059AE63 /* FLAPost.m in Sources */,
 				5896DDAF1B22221F004C6C8F /* FLAPostViewController.m in Sources */,
+				580185701B27690B00DF27F1 /* DataBase.m in Sources */,
+				5801856D1B274CCD00DF27F1 /* Model.xcdatamodeld in Sources */,
 				582C05F61B20D9A8008B5333 /* AppDelegate.m in Sources */,
 				582C05F31B20D9A8008B5333 /* main.m in Sources */,
 			);
@@ -513,6 +523,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5801856B1B274CCD00DF27F1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5801856C1B274CCD00DF27F1 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5801856C1B274CCD00DF27F1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 582C05E51B20D9A8008B5333 /* Project object */;
 }
