@@ -10,8 +10,8 @@
 #import <Mantle.h>
 
 @interface FLAPost : MTLModel <MTLJSONSerializing>
-@property (nonatomic) NSString *_name;
-@property (nonatomic) NSString *_image;
-@property (nonatomic) NSString *_info;
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *image;
+@property (nonatomic) NSString *details;
 
 @end
